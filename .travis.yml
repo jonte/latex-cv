@@ -1,0 +1,17 @@
+language: c
+sudo: required
+before_install:
+- make install_dependencies
+script:
+- make
+install: true
+deploy:
+  provider: releases
+  api_key:
+    secure: mFg0VwxPajqR7g4rDgeE/Tn1VXkbWEomlgbElG65bHz7k1ILRtybj0hfAoc4X6vr4IPeGc6PTPO74K9kXtSKIfIRNWgfMF9b+GRFlHaP2yDkH9NkCa1mOm78E/nyy2EbQ4DH6MA5cPkXRLWAZoPurgTeXN63YgdV4RZf2zs/zd5ATz7wkTY7NcFWclTpiE1AINzUNBP8Q8VsrhjuRuknu3ME1D1wQF10S8JaAVKo4GQNhcpN2JeOICbkh46ssYAAF0DJzR0veG++jDHJ0hgzTtfeRFY+mzEawVm0gAecCfHjOnxKks/sramk2o1hYKqVwqgocW5+w94n2gxO71t89u/y4sZhELq8bUWWE6BzBzfE5MOju+0mHW87ChQc4CKcHj4rcbL82tcEupBOrCTM1ZaiHrbY93FRikEMRt59BiyfwhW3daGI7ymoUHzGSwexS15hCyUwsy3GJLbpCrrGo/A/S7/ArHVjY0YIVcwakqbVqBg4Tu/jhsJmYOIvKvv4Mel/3BL1/eCwAHHpBCg9zLXkP84Kzql/dVRtof8+MTXEl5idz8q7q31c3sMc6/8MknVmQYih9HDerxJxlv10UBeaMLau5qRIVPZ4r4CHB8ot5WvEWANiIZDXFmUWot0c6CAJWnrna/zi0cAuce38eVREoaKZ7fDIoE8pB03fU+Q=
+  file:
+      - jonatan-cv.pdf
+      - example-cv.pdf
+  on:
+    all_branches: true
+    tags: true
