@@ -80,8 +80,15 @@
     \end{itemize}
 }
 
-\newcommand{\bitem}[2] {
-    \item \textbf{#1} - #2
+\newcommand{\bitem}[3] {
+    \item \textbf{#1} - \ifnum#2=1 Very good
+                            \else\ifnum#2=2 Good
+                                \else\ifnum#2=3 Decent
+                                    \else\ifnum#2=4 OK
+                                    \fi
+                                \fi
+                            \fi
+                        \fi - #3
 }
 
 \newcommand{\employment}[4] {
