@@ -70,3 +70,28 @@
 \newcommand{\cvrow}[2]{
   #1 & #2 \\
 }
+
+\newcommand{\bulletlist}[2]{
+    \subsection*{#1}
+    \begin{itemize}
+    \itemsep0.1em
+    \renewcommand{\labelitemi}{$\triangleright$}
+    #2
+    \end{itemize}
+}
+
+\newcommand{\bitem}[2] {
+    \item \textbf{#1} - #2
+}
+
+\newcommand{\employment}[4] {
+    \subsection*{#2}
+    \emph{#1}\\
+    #3 \newline\newline
+    #4
+}
+
+\newcommand{\project}[2] {
+    \emph{#1}\newline
+    \noindent #2
+}
