@@ -1,3 +1,4 @@
+VER=$(shell a=`git tag --points-at HEAD | head -n 1`; if [ -z "$$a" ]; then git rev-parse --short HEAD; else echo $$a; fi )
 PACKAGES=texlive-fonts-recommended     \
          texlive-latex-extra           \
          texlive-fonts-extra           \
@@ -8,14 +9,14 @@ PACKAGES=texlive-fonts-recommended     \
 
 LATEX=pdflatex
 
-.PHONY: install_dependencies clean
+.PHONY: install_dependencies clean all release
 
-all: jonatan example
+all: jonatan-cv.pdf example-cv.pdf
 
-jonatan:
+jonatan-cv.pdf:
 	$(LATEX) jonatan-cv.tex
 
-example:
+example-cv.pdf:
 	$(LATEX) example-cv.tex
 
 install_dependencies:
@@ -23,4 +24,9 @@ install_dependencies:
 	sudo apt-get install -y --no-install-recommends $(PACKAGES)
 
 clean:
-	rm *.aux *.log *.out *.pdf
+	rm *.aux *.log *.out *.pdf release/*.pdf
+
+release: jonatan-cv.pdf example-cv.pdf
+	mkdir -p release/
+	cp jonatan-cv.pdf release/jonatan-cv-$(VER).pdf
+	cp example-cv.pdf release/example-cv-$(VER).pdf
