@@ -9,6 +9,7 @@
     Name           & Jonatan Pålsson      \\
     Phone number   & +46 (0)73 698 7205   \\
     E-mail / jabber& jonatan.p@gmail.com  \\
+    IRC            & jonte @ FreeNode     \\
     Address        & Göteborg, Sweden     \\
     Date of birth  & 1989 01 06
   }
@@ -17,7 +18,11 @@
            {Senior Software Engineer}
            {June 2015 -- Ongoing}
            {
-I have taken lead in multiple projects, below are some samples.\newline\newline
+I have taken lead in multiple projects, below are some samples.\newline
+
+\project{Yocto-based Linux platforms}
+        {I have developed several automotive development platforms for car manufacturers. These platforms have been developed together with the car manufacturers, according to their specific requirements. Typical use-cases for these platforms has been to enable middleware, and UI development by other developers, and to serve as demonstrators. The platforms have been Yocto-based (typically on the Poky distribution). I have tailored the platforms to customer demands regarding upstart (such as customization of systemd and systemd units), kernel modifications (including development of device drivers), hardware support (WiFi, Bluetooth, graphics drivers, bootloader customizations, etc.). Most of these projects have used NVIDIA hardware.}
+\newline\newline
 \project{Android Auto demonstrator}
         {I developed an Android Auto demonstrator capable of audio and video streaming, as well as providing a basic command channel. The demonstrator had a Qt UI which displayed a video stream rendered using GStreamer, captured audio input using PulseAudio and provided basic audio and video focus handling. The platform itself was built using Yocto, based on Poky and an automotive-specific layer for infotainment systems (meta-ivi). I gave a talk describing the implementation of the project on the GENIVI All Members Meeting.}
 \newline\newline
@@ -64,7 +69,7 @@ I have taken lead in multiple projects, below are some samples.\newline\newline
 In general, I think programming languages are fun, and I enjoy learning new ones.
 
 \bulletlist{Operating systems}{
-    \bitem {Desktop/server Linuxes} {1}{Greatly prefer Debian. Used Linux for a decade or more}
+    \bitem {Desktop/server Linuxes} {1}{Greatly prefer Debian. Used Linux for more than a decade}
     \bitem {Windows XP -- 8}        {2}{Used at home from time to time}
 }
 \bulletlist{Development environments \& IDEs}{
@@ -91,6 +96,17 @@ In general, I think programming languages are fun, and I enjoy learning new ones
     \bitem {Process containment}    {3} {Co-authoring a book on cgroups and namespaces \footnote{\url{https://github.com/containerbook/containerbook/}}}
     \bitem {Android build system}   {4} {Developed several Android native and sandboxed apps/services in AOSP}
     \bitem {Git Build System (GBS)} {4} {Built Tizen-IVI and software for it using GBS}
+    \bitem {Gerrit}                 {4} {I have worked with Gerrit primarily when submitting new features to the Qt project}
+}
+
+\bulletlist{Chips \& hardware} {
+    \bitem {NXP SAF775}  {3}{I have written device drivers and middleware software to interact with the SAF775 (Dirana3)}
+    \bitem {NXP SAF36}   {3}{I have written device drivers and middleware software to interact with the SAF36 (SATURN)}
+    \bitem {NXP TEF701}  {3}{I have written device drivers and middleware software to interact with the TEF701 (SABRE)}
+    \bitem {PCI Express} {4}{I have developed device drivers for PCI-Express devices, mainly for multi-functional devices where the PCI-E link has been used to multiplex other busses}
+    \bitem {SPI}         {4}{I have developed device driver for SPI devices, mainly for radio tuner hardware}
+    \bitem {I$^2$C}      {4}{I have developed device driver for SPI devices, mainly for radio tuner hardware}
+    \bitem {CAN}         {4}{I have developed userspace code for interacting with CAN devices in automotive networks}
 }
 
 \section*{Academical merits}
@@ -106,7 +122,7 @@ This thesis\footnote{\url{https://github.com/jonte/theses/raw/master/msc_thesis.
 The thesis\footnote{\url{https://github.com/jonte/theses/raw/master/bsc_thesis.pdf}} investigates whether it is possible to create a programming language agnostic application server specialized for game-like applications. The project was carried out by four team members and I learned many things about team work and organization, in addition to the actual technical aspects of the project. A prototype capable of powering several hundred simple game instances written in JavaScript was developed in Erlang.
 
 \section*{Personal notes}
-I love technology and software development. I have strong opinions on software and systems, because these things are important to me. I am an avid Linux user, and I really, really like UNIX-like systems. I enjoy working in open source communities, and I strongly empathize with open source ideas and ideals, software wants to be free :)
+I love technology and software development. I have strong opinions on software and systems, because these things are important to me. I am an avid Linux user, and I really, really like UNIX-like systems. I enjoy working in open source communities, and I strongly empathize with open source ideas and ideals. Software wants to be free :)
 
 For me, my job needs to be challenging, and my colleagues need to be competent, which means we can learn from each other. Learning new things is very important, and I enjoy keeping up to date with the latest news in the projects I enjoy. I also enjoy teaching co-workers, or community members new things in order to build better projects.
 \end{document}
