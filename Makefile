@@ -13,10 +13,10 @@ LATEX=pdflatex
 
 all: jonatan-cv.pdf example-cv.pdf
 
-jonatan-cv.pdf:
+jonatan-cv.pdf: jonatan-cv.tex twocolcv.cls
 	$(LATEX) jonatan-cv.tex
 
-example-cv.pdf:
+example-cv.pdf: example-cv.tex twocolcv.cls
 	$(LATEX) example-cv.tex
 
 install_dependencies:
@@ -24,7 +24,7 @@ install_dependencies:
 	sudo apt-get install -y --no-install-recommends $(PACKAGES)
 
 clean:
-	rm *.aux *.log *.out *.pdf release/*.pdf
+	rm -f *.aux *.log *.out *.pdf release/*.pdf
 
 release: jonatan-cv.pdf example-cv.pdf
 	mkdir -p release/
