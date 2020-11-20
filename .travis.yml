@@ -10,8 +10,7 @@ deploy:
   provider: releases
   file_glob: true
   skip_cleanup: true
-  api_key:
-    secure: ltuW1PLZZCEKcQ/tmlNmptNiPz77HSJsXjEkwTtEHrcWF4Lf2ZtBm+LAo84hTkuEvuiH4qJ7kxUw5M2jRAicC49FN7g0QfzJvGnWfcm9DF6vFSlOsI15sX+TQl3NkTaA/QjAPTnerjjrca45qh7AZGpaPbswZHAa2iy/+CQUVFqnfZMJRaNkuOqlNwEw8fP3BgdSjOFM0YD6EQ6gKHHLAsUuwVxzG95GhutOFI0XuTwbN9IEKykD4qrtyHrFR/s7c2y6cGz3EG+yxAV+yiIT8ISrar7naxAdmVMkqhaCUM/btGAK9kPLX2Vh8sARf/muNKVIekUusEt/9GDWgJP7s3yn5dtshTM8uDVQ1B3GCNQJ3R5EhS7ra6u4wYsCmsSwZtcm0Tc6s6rJ4k3/4Dr+M4Wt3QpVjxpOb4ZEMeiTtTfC3D6LzWKcNkeiNUG8USQpgLC1yIghVl30nF8LDc192aRQCS4oJen5AVU4ZjZ2bh2MhDMXoHIZc9gxKtm+G7TwhbEQoXznuwVwOZ5cLkYqxdYoG3piVYpncDwwZ7FaDZzbT41tRqBDbBALCrZV6mklGjGPJ4NTrflH89hVl55tllSHUd8PhTlJTdozIBo3+RkuVe3QV08zg0kiXda1kbDCtW77TMeGGETNFlziqyY3R8+wv/85fXqdFdtiKJX1I/Y=
+  api_key: $GITHUB_TOKEN
   file: release/*.pdf
   on:
     all_branches: true
