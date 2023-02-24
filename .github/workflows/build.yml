@@ -1,0 +1,27 @@
+name: Publish PDF as a GitHub Release
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: make install_dependencies
+
+    - name: Build PDF
+      run: |
+        make
+        make release
+
+    - name: Publish release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "release/*.pdf"
