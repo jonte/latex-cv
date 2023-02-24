@@ -3,8 +3,7 @@ PACKAGES=texlive-fonts-recommended     \
          texlive-latex-extra           \
          texlive-fonts-extra           \
          dvipng                        \
-         texlive-latex-recommended     \
-         latex-xcolor
+         texlive-latex-recommended
 
 
 LATEX=pdflatex
