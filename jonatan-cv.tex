@@ -9,7 +9,7 @@
     Name           & Jonatan Pålsson    \\
     Phone number   & +46 (0)73 698 7205 \\
     E-mail         & jonatan@jptk.se 	\\
-    Address        & Göteborg, Sweden   \\
+    Address        & Göteborg/Sävedalen, Sweden   \\
     Date of birth  & 1989 01 06
   }
 \section*{Professional merits}
@@ -20,7 +20,7 @@
 \project{Embedded Linux consulting}
         {As an independent contractor I have provided expertise in small and large embedded Linux systems based on custom Yocto configurations. In this role I have implemented software, as well as provided teaching and coaching in developing modern Linux systems and using modern software engineering methodologies.
 \\\\
-I have implemented software ranging from data collection scripts in e.g. Python, application software in C and C++, as well as Linux device drivers in C. The hardware used has ranged from multiple racks of powerful x86 down to battery-powered ARM devices depending on project and application.
+I have implemented software ranging from data collection scripts in e.g. Python, application software in C and C++, Linux device drivers in C to bluetooth applications in Zephyr. The hardware used has ranged from multiple racks of powerful x86 down to battery-powered ARM devices depending on project and application.
 \\\\
 I can help in all phases of a project, from sales and prospecting to execution and final delivery.}
 }
@@ -59,11 +59,6 @@ I can help in all phases of a project, from sales and prospecting to execution a
      {January 2013 -- June 2013}
      {I wrote my Master's thesis in the Gothenburg office of Pelagicore, see Master's thesis section.}
 
-\employment{Mezmerize-e}
-           {Software developer}
-           {February 2011 -- February 2012}
-           {During my time here, I developed a product recommendation engine for e-commerce. The engine suggested products based on purchase patterns and product similarity. I worked with Python, PHP, memcached, Apache and MySQL.}
-
 \section*{Spoken languages}
   \cvtable{
     Swedish     & I have lived in Sweden for all my life and I speak Swedish natively \\\\
@@ -87,55 +82,60 @@ In general, I think programming languages are fun, and I enjoy learning new ones
 
 \bulletlist{Operating systems}{
     \bitem {Desktop/server Linuxes} {1}{Greatly prefer Debian. Used Linux for more than two decades}
-    \bitem {WindRiver Linux}        {1}{I have provided expert support for WRL5/8/18/22 on a contractor basis}
+    \bitem {WindRiver Linux}        {1}{I have provided expert support for WRL5-24 on a contractor basis}
     \bitem {Yocto project}          {1}{I have provided expert support for Yocto-based Linuxes}
-    \bitem {Microsoft Windows}      {2}{Used at home from time to time}
+    \bitem {Zephyr}                 {2}{Used for small-scale projects}
 }
 \bulletlist{Development environments \& IDEs}{
     \bitem {Vim}            {1} {Environment of choice.}
-    \bitem {Fusion360}      {1} {Used for additive manufacturing, PCB design, sheet metal, and 3d model work (for e.g. KiCad models). This is my CAD/CAM system of choice.}
-    \bitem {KiCad 5/6/7}    {1} {Used for small and medium sized electronics projects, including RP2040, STM32 and ESP32. This is my PCB/schematics CAD tool of chioce.}
+    \bitem {Fusion360}      {1} {Used for additive manufacturing, PCB design, sheet metal, and 3D model work (for e.g. KiCad models). This is my CAD/CAM system of choice.}
+    \bitem {KiCad 5-9}      {1} {Used for many electronics projects, including RP2040, STM32, ESP32, T113-S3 and i.MX91. This is my eCAD tool of choice.}
     \bitem {Eclipse}        {3} {Used for Java development}
     \bitem {Android Studio} {3} {Used for Java Android apps}
-    \bitem {Visual Studio}  {4} {Used for C\# development}
+    \bitem {Cadence OrCAD}  {4} {Used for working with NXP reference designs}
 }
 
 \bulletlist{Tools, Frameworks \& Tech} {
     \bitem {Git}            {1}{I have implemented my own git tool in C :-)}
     \bitem {Yocto}          {1}{Written recipes, made \& maintained layers, and provided expert consultancy services}
     \bitem {Gerrit}         {1}{I have worked with Gerrit in several projects}
-    \bitem {Linux kernel}   {2}{Written several GPIO, I$^2$C, SPI, and (bitbanged) JTAG device drivers. Configured device trees, optimized kernels for boot and execution speed. I have ported several large proprietary drivers from old to new kernel versions.}
-    \bitem {U-Boot}         {2}{Used on ARM targets. Used for A/B partitioning schemes, network configuration, etc.}
+    \bitem {Linux kernel}   {1}{Written several crypto, GPIO, I$^2$C, SPI, and (bitbanged) JTAG device drivers. Configured device trees, brought up new hardware, optimized kernels for boot and execution speed. I have ported several large proprietary drivers from old to new kernel versions.}
+    \bitem {U-Boot}         {1}{Used on ARM targets. Used board bringups, NXP HABv4, A/B partitioning schemes, network configuration, etc.}
+    \bitem {Secure boot}    {2}{I have implemented secure boot on NXP platforms using HAB, U-Boot, dm-verity, dm-crypt, Linux, and CAAM red/black keys}
     \bitem {SWUpdate}       {2}{Use for OTA updates with custom update procedures for e.g. bootloaders, applications and partitioning}
-    \bitem {Jenkins}        {3}{Used and configured professionally for contiguous integration}
+    \bitem {OpenSSL}        {3}{I have implemented OpenSSL providers for custom hardware-accelerated crypto}
+    \bitem {Linux PAM}      {3}{I have implemented custom Pluggable-authentication-modules for custom authentication mechanisms for e.g. OpenSSH}
+    \bitem {Jenkins}        {3}{Used and configured professionally for continuous integration}
     \bitem {Qt Core}        {3}{Used for medium sized projects}
     \bitem {Glib}           {3}{Used for medium sized projects}
     \bitem {Glibmm}         {3}{Used for medium sized projects}
     \bitem {GNU Make}       {3}{Developed several reasonably complex build scaffoldings}
-    \bitem {CMake}          {3}{Build system of choice, developed several reasonably complex build scaffoldings}
-    \bitem {Meson}          {3}{I have used Meson for several personal projects}
+    \bitem {CMake}          {3}{I have developed several reasonably complex build scaffoldings}
+    \bitem {Meson}          {3}{Build system of choice. I have used Meson for several projects}
     \bitem {Process containment}    {3} {I have extensive Docker competence, and have some Kubernetes experience}
     \bitem {Android build system}   {4} {Developed several Android native and sandboxed apps/services in AOSP}
 }
 
 \bulletlist{Chips \& hardware} {
-    \bitem {NXP SAF775}  {3}{I have written device drivers and middleware software to interact with the SAF775 (Dirana3)}
-    \bitem {NXP SAF36}   {3}{I have written device drivers and middleware software to interact with the SAF36 (SATURN)}
-    \bitem {NXP TEF701}  {3}{I have written device drivers and middleware software to interact with the TEF701 (SABRE)}
+    \bitem {Allwinner T113-S3}   {2}{Used for custom low-cost designs}
+    \bitem {NXP i.MX6}   {2}{I have extensive experience with i.MX6 for e.g. secure boot and CAAM crypto}
+    \bitem {NXP i.MX91}  {2}{Used for custom PCB designs}
+    \bitem {Skyworks Si3404}  {3}{Used to develop PoE class 2 devices}
     \bitem {Microchip IGLOO FPGA}  {3}{I have developed in-the-field programming software using Microchip DirectC}
     \bitem {1-Wire} {3}{I have developed QEMU device support for 1-Wire, as well as developed custom 1-Wire hardware for DS2482-800.}
     \bitem {PCI Express} {4}{I have developed device drivers for PCI-Express devices, mainly for multi-functional devices where the PCI-E link has been used to multiplex other busses}
-    \bitem {SPI}         {4}{I have developed device drivers for SPI devices, mainly for radio tuner hardware}
-    \bitem {I$^2$C}      {4}{I have developed device drivers for SPI devices, mainly for radio tuner hardware}
+    \bitem {SPI}         {4}{I have experience with SPI devices and controllers on NXP and Allwinner platforms}
+    \bitem {I$^2$C}      {4}{I have experience with I2C devices and controllers on NXP and Allwinner platforms}
     \bitem {CAN}         {4}{I have developed userspace code for interacting with CAN devices in automotive networks}
     \bitem {ESP32 S3}    {4}{I have developed sensor prototypes based on ESP32 S3, HTTP and deep sleep}
     \bitem {RP2040}      {4}{I have developed PID regulators using RP2040 and SSRs for driving heating elements}
 }
 
-\bulletlist{Electronics manufacturing} {
+\bulletlist{Electronics prototyping} {
     \bitem {Reflow soldering} {3}{I have basic knowledge of reflow soldering, and have developed my own reflow soldering oven for small prototypes}
     \bitem {Hot air rework}   {3}{I have basic knowledge of hot air rework from reworking prototype boards}
     \bitem {SMT/THT soldering}{3}{I have basic knowledge of manually populating and soldering SMT and THT components for prototype boards}
+    \bitem {PCBA services}{3}{I have experience in designing for Aisler, JLCPCB and PCBWAY for quick prototyping}
 }
 
 \section*{Academical merits}
